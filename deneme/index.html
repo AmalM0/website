@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Amal Mammadaliyev</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background:
+                radial-gradient(circle at 10% 20%, #ff4ecd55, transparent 30%),
+                radial-gradient(circle at 90% 10%, #4c6fff66, transparent 30%),
+                radial-gradient(circle at 50% 100%, #00e5ff44, transparent 35%),
+                #090914;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 50px 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 850px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            backdrop-filter: blur(20px);
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 25px 80px rgba(0,0,0,0.5);
+        }
+
+        .profile {
+            text-align: center;
+            padding-bottom: 35px;
+        }
+
+        .avatar img{
+            width: 20%;
+            height: 20%;
+            object-fit: cover;
+            border-radius: 39%;
+        }
+
+            background: linear-gradient(
+                135deg,
+                #ff4ecd,
+                #6c63ff,
+                #00d9ff
+            );
+
+            font-size: 42px;
+            font-weight: bold;
+
+            box-shadow:{
+                0 0 30px #ff4ecd66,
+                0 0 60px #6c63ff44;
+
+            animation: float 3s ease-in-out infinite;
+        }
+
+        h1 {
+            margin-top: 25px;
+            font-size: 42px;
+        }
+
+        .username {
+            margin-top: 10px;
+            color: #bdbde8;
+            font-size: 17px;
+        }
+
+        .bio {
+            max-width: 550px;
+            margin: 20px auto 0;
+            line-height: 1.6;
+            color: #d0d0df;
+            font-size: 16px;
+        }
+
+        .socials {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            text-decoration: none;
+            color: white;
+            padding: 25px;
+            border-radius: 20px;
+            transition: 0.3s;
+            border: 1px solid rgba(255,255,255,0.12);
+        }
+
+        .card:hover {
+            transform: translateY(-7px) scale(1.02);
+        }
+
+        .tiktok {
+            background: linear-gradient(135deg, #111, #ff005055);
+        }
+
+        .instagram {
+            background: linear-gradient(
+                135deg,
+                #833ab4,
+                #fd1d1d,
+                #fcb045
+            );
+        }
+
+        .icon {
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        .card h2 {
+            font-size: 20px;
+            margin-bottom: 6px;
+        }
+
+        .card p {
+            color: #eeeeee;
+            font-size: 14px;
+        }
+
+        .about {
+            margin-top: 40px;
+            padding: 30px;
+            border-radius: 22px;
+            background: rgba(0,0,0,0.25);
+        }
+
+        .about h2 {
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .about p {
+            color: #c7c7d5;
+            line-height: 1.7;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #8888a0;
+            font-size: 13px;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 35px 20px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .socials {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <section class="profile">
+
+            <div class="avatar">
+                <img src="logo.jpg.jpeg" alt="Amal Mammadaliyev" srcset="">
+            </div>
+
+            <h1>Amal Mammadaliyev</h1>
+
+            <p class="username">
+                Şəxsi Bloq &nbsp;•&nbsp; Kontent Yaradıcısı
+            </p>
+
+            <p class="bio">
+                İnternetdəki kiçik şəxsi səhifəmə xoş gəlmisən.
+                Burada fikirlərimi, maraqlarımı, həyatımı və
+                gündəlik yaşadığım anları paylaşıram.
+            </p>
+
+        </section>
+
+
+        <div class="socials">
+
+            <a
+                class="card tiktok"
+                href="https://www.tiktok.com/@the.mmdlyv"
+                target="_blank"
+            >
+                <div class="icon">♪</div>
+                <h2>TikTok</h2>
+                <p>@the.mmdlyv</p>
+            </a>
+
+
+            <a
+                class="card instagram"
+                href="https://www.instagram.com/im.mmdlyv"
+                target="_blank"
+            >
+                <div class="icon">◎</div>
+                <h2>Instagram</h2>
+                <p>@im.mmdlyv</p>
+            </a>
+
+        </div>
+
+
+        <section class="about">
+
+            <h2>Haqqımda</h2>
+
+            <p>
+                Salam, mən Amal. Bura fikirlərimi, maraqlarımı,
+                yaşadığım təcrübələri və gündəlik həyatımdan
+                maraqlı anları paylaşdığım şəxsi məkanımdır.
+            </p>
+
+        </section>
+
+
+        <footer>
+            © 2026 Amal Mammadaliyev
+        </footer>
+
+    </div>
+
+</body>
+</html>
